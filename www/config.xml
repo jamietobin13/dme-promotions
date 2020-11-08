@@ -53,6 +53,8 @@
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
+    <!-- <plugin name="cordova-plugin-cache" /> -->
+    
     <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
     <!--<plugin name="cordova-plugin-device-motion" /> -->
     <!--<plugin name="cordova-plugin-device-orientation" /> -->
