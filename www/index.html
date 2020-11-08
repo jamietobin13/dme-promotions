@@ -11,10 +11,9 @@
    
         <link rel="stylesheet" id="bootstrap-css" type="text/css" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" id="index-css" type="text/css" href="./css/index.css" />
-         <!-- <link rel="stylesheet" id="dme-css"  href="https://dme-promotions.com/wp-content/themes/dme-promotions/assets/css/app.css?ver=1.0" type="text/css" media="all" /> -->
-        <script>
-        document.write("<link rel='stylesheet' id='dme-css' src='https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/css/app.css?v=" + Date.now() + "'>");
-        </script>
+        <link rel="stylesheet" id="dme-css"  href="https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/css/app.css" type="text/css" media="all" />
+        
+    
 
         <title>DME Promotions</title>
     </head>
@@ -29,9 +28,21 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="./js/bootstrap.min.js"></script> 
-        <!-- <script type='text/javascript' src='https://dme-promotions.com/wp-content/themes/dme-promotions/assets/js/app.js?ver=1.0'></script> -->
-         <script>
-        document.write("<script type='text/javascript' src='https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/js/app.js?v=" + Date.now() + "'><\/script>");</script>
+        <script type='text/javascript' src='https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/js/app.js'></script>
+        
+        <script>
+    
+            function onDeviceReady(){
+
+                var success = function(status) { alert('Message: ' + status); }
+                var error = function(status) { alert('Error: ' + status); }
+                window.cache.clear( success, error );
+
+            }
+
+            document.addEventListener('deviceready', onDeviceReady);
+
+    </script>
         
     </body>
 </html>
