@@ -53,7 +53,6 @@
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
-    <plugin name="cordova-plugin-cache-clear" /> 
     <!-- <plugin name="pushwoosh-intel-xdk-plugin" /> -->
     
     <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->

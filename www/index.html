@@ -8,13 +8,11 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,300;1,700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
-   
         <link rel="stylesheet" id="bootstrap-css" type="text/css" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" id="index-css" type="text/css" href="./css/index.css" />
-        <link rel="stylesheet" id="dme-css"  href="https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/css/app.css" type="text/css" media="all" />
-        
-    
 
+        <!-- <link rel="stylesheet" id="dme-css"  href="https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/css/app.css" type="text/css" media="all" /> -->
+    
         <title>DME Promotions</title>
     </head>
     <body data-version="1.0" onload="onDeviceReady()">
@@ -28,29 +26,19 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script type="text/javascript" src="./js/bootstrap.min.js"></script> 
-        <script type='text/javascript' src='https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/js/app.js'></script>
-        
+
         <script>
-    
+        document.write("<script type='text/javascript' src='https://dev.crystalmountainmedia.net/clients/dme/wp-content/themes/dme-promotions/assets/js/app.js?v=" + Date.now() + "'><\/script>");
+        </script>
+
+        <script>
             function onDeviceReady(){
 
-                alert('device ready');
-
-                var success = function(status) {
-                    alert('Message: ' + status);
-                };
-
-                var error = function(status) {
-                    alert('Error: ' + status);
-                };
-                
-                window.CacheClear(success, error);
-
+                  alert('device readyy')
             }
 
             document.addEventListener('deviceready', onDeviceReady , false);
-
-    </script>
+        </script>
         
     </body>
 </html>
