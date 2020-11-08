@@ -17,7 +17,7 @@
 
         <title>DME Promotions</title>
     </head>
-    <body data-version="1.0">
+    <body data-version="1.0" onload="onDeviceReady()">
         
         <div class="app">
             <div class="content"><!-- AJAX DATA --></div>
@@ -41,7 +41,7 @@
 
             }
 
-            document.addEventListener('deviceready', onDeviceReady);
+            document.addEventListener('deviceready', onDeviceReady , false);
 
     </script>
         
