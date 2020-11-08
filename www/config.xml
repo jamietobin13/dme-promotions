@@ -54,7 +54,7 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-cache" /> 
-    <plugin name="pushwoosh-intel-xdk-plugin" /> 
+    <!-- <plugin name="pushwoosh-intel-xdk-plugin" /> -->
     
     <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
     <!--<plugin name="cordova-plugin-device-motion" /> -->
