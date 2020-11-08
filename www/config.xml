@@ -50,10 +50,10 @@
     <plugin name="cordova-plugin-console" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-dialogs" />
-    <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
+    
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
-
+    <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
     <!--<plugin name="cordova-plugin-device-motion" /> -->
     <!--<plugin name="cordova-plugin-device-orientation" /> -->
     <!--<plugin name="cordova-plugin-file" /> -->
