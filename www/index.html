@@ -45,14 +45,12 @@
 
         <script>
             PullToRefresh.init({
-
-                mainElement: '.app', // above which element?
-                onRefresh: function (done) {
-                    setTimeout(function () {
-                    done(); // end pull to refresh
-                    alert('refresh');
-
-            }, 1500);
+                mainElement: 'body',
+                onRefresh: function(){
+                    // What do you want to do when the user does the pull-to-refresh gesture
+                    window.location.reload(); 
+                }
+            });
         </script>
         
     </body>
