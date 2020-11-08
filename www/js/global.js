@@ -21,23 +21,26 @@ var app = {
     onDeviceReady: function() {
 
         app.receivedEvent('deviceready');
+        alert('device ready 1');
 
     },
     onOffline: function(){
 
         app.receivedEvent('offline');
+        alert('device offline 1');
 
     },
     onOnline: function(){
 
         app.receivedEvent('online');
+        alert('device online 1');
 
     },
     receivedEvent: function(id) {
 
-        alert( 'id: ' + id );
+       /* alert( 'id: ' + id );
         if( id == 'offline' ){ alert('device offline'); } 
-        if( id == 'online' ){ alert('device online'); }
+        if( id == 'online' ){ alert('device online'); }*/
 
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
