@@ -40,8 +40,8 @@
 	
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version" value="cli-6.5.0" /> -->
-    <preference name="android-minSdkVersion" value="17" />
-    <preference name="android-targetSdkVersion" value="20" />
+    <preference name="android-minSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="29" />
 
     <!-- Plugins -->
 
