@@ -8,14 +8,10 @@ var app = {
     initialize: function() {
 
         app.bindEvents();
-        console.log('inited')
 
     },   
     bindEvents: function() {
 
-        console.log('binded')
-        // Bind any events that are required on startup. Common events are:
-        // 'load', 'deviceready', 'offline', and 'online'.
         document.addEventListener('offline', this.onOffline, false);
         document.addEventListener('online', this.onOnline, false);
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -41,8 +37,9 @@ var app = {
     },
     receivedEvent: function(id) {
 
-      alert( 'id: ' + id );
-       /* 
+        alert( 'id: ' + id );
+        
+        /* 
         if( id == 'offline' ){ alert('device offline'); } 
         if( id == 'online' ){ alert('device online'); }*/
 
