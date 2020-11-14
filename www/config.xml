@@ -44,13 +44,14 @@
     <plugin name="cordova-plugin-console" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-dialogs" />
-        
+    <plugin name="cordova-plugin-inappbrowser" />
+    
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
 
 
-    <!-- <plugin name="cordova-plugin-inappbrowser" /> -->
+    
     <!-- <plugin name="pushwoosh-intel-xdk-plugin" /> -->
     
     <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
