@@ -7,14 +7,8 @@
         version   = "1.0">
 
     <name>DME Promotions</name>
-
-    <description>
-        Concerts and Events
-    </description>
-
-    <author href="http://crystalmountainmedia.net" email="contact@crystalmountainmedia.net">
-        Crystal Mountain Media
-    </author>
+    <description>Concerts and Events</description>
+    <author href="http://crystalmountainmedia.net" email="contact@crystalmountainmedia.net">Crystal Mountain Media</author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -50,14 +44,13 @@
     <plugin name="cordova-plugin-console" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    
+        
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
 
 
-    
+    <!-- <plugin name="cordova-plugin-inappbrowser" /> -->
     <!-- <plugin name="pushwoosh-intel-xdk-plugin" /> -->
     
     <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
