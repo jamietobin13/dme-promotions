@@ -16,31 +16,33 @@
             var app = {
                 initialize: function() {
 
-                    alert('init');
-                    //app.bindEvents();
+                    this.bindEvents();
 
                 },   
                 bindEvents: function() {
 
-                   // document.addEventListener('offline', this.onOffline, false);
-                   // document.addEventListener('online', this.onOnline, false);
-                   // document.addEventListener('deviceready', this.onDeviceReady, false);
+                    document.addEventListener('offline', this.onOffline, false);
+                    document.addEventListener('online', this.onOnline, false);
+                    document.addEventListener('deviceready', this.onDeviceReady, false);
 
                 },
                 onDeviceReady: function() {
 
+                    alert('device ready');
                     //app.receivedEvent('deviceready');
                    // alert('device ready 1');
 
                 },
                 onOffline: function(){
 
+                    alert('device offline');
                   //  app.receivedEvent('offline');
                  //   alert('device offline 1');
 
                 },
                 onOnline: function(){
 
+                    alert('device online');
                    // app.receivedEvent('online');
                    // alert('device online 1');
 
