@@ -49,6 +49,17 @@
     <plugin name="cordova-plugin-whitelist" />
 
 
+    <platform name="android">
+      <resource-file src="res/android/values/ic_launcher_background.xml" target="/app/src/main/res/android/values/ic_launcher_background.xml" />
+      <icon background="@color/background" density="ldpi" foreground="res/icon/android/mipmap-ldpi/ic_launcher.png" />
+      <icon background="@color/background" density="mdpi" foreground="res/icon/android/mipmap-mdpi/ic_launcher_foreground.png" />
+      <icon background="@color/background" density="hdpi" foreground="res/icon/android/mipmap-hdpi/ic_launcher_foreground.png" />
+      <icon background="@color/background" density="xhdpi" foreground="res/icon/android/mipmap-xhdpi/ic_launcher_foreground.png" />
+      <icon background="@color/background" density="xxhdpi" foreground="res/icon/android/mipmap-xxdpi/ic_launcher_foreground.png" />
+      <icon background="@color/background" density="xxxhdpi" foreground="res/icon/android/mipmap-xxxdpi/ic_launcher_foreground.png" />
+    </platform>
+
+
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icons/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
