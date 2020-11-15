@@ -50,7 +50,7 @@
 
 
     
-    <platform name="android">
+    <!-- <platform name="android">
       <resource-file src="res/icons/android/values/ic_launcher_background.xml" target="/app/src/main/res/icons/android/values/ic_launcher_background.xml" />
       <icon background="#040404" density="ldpi" foreground="res/icons/android/mipmap-ldpi/icon.png" />
       <icon background="#040404" density="mdpi" foreground="res/icons/android/mipmap-mdpi/icon.png" />
@@ -58,11 +58,11 @@
       <icon background="#040404" density="xhdpi" foreground="res/icons/android/mipmap-xhdpi/icon.png" />
       <icon background="#040404" density="xxhdpi" foreground="res/icons/android/mipmap-xxdpi/icon.png" />
       <icon background="#040404" density="xxxhdpi" foreground="res/icons/android/mipmap-xxxdpi/icon.png" />
-    </platform>
+    </platform> -->
 
 
     <!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
+    <icon src="icon.png" background="#040404"/>
     <icon src="res/icons/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
     <icon src="res/icons/ios/icon-40.png" gap:platform="ios" width="40" height="40" />
     <icon src="res/icons/ios/icon-50.png" gap:platform="ios" width="50" height="50" />
