@@ -49,15 +49,15 @@
     <plugin name="cordova-plugin-whitelist" />
 
 
-    <resource-file src="res/icons/android/values/ic_launcher_background.xml" target="/app/src/main/res/android/values/ic_launcher_background.xml" />
+    
     <platform name="android">
-      
-      <icon background="@color/background" density="ldpi" foreground="res/icons/android/mipmap-ldpi/icon.png" />
-      <icon background="@color/background" density="mdpi" foreground="res/icons/android/mipmap-mdpi/icon.png" />
-      <icon background="@color/background" density="hdpi" foreground="res/icons/android/mipmap-hdpi/icon.png" />
-      <icon background="@color/background" density="xhdpi" foreground="res/icons/android/mipmap-xhdpi/icon.png" />
-      <icon background="@color/background" density="xxhdpi" foreground="res/icons/android/mipmap-xxdpi/icon.png" />
-      <icon background="@color/background" density="xxxhdpi" foreground="res/icons/android/mipmap-xxxdpi/icon.png" />
+      <resource-file src="res/icons/android/values/ic_launcher_background.xml" target="/app/src/main/res/icons/android/values/ic_launcher_background.xml" />
+      <icon background="#040404" density="ldpi" foreground="res/icons/android/mipmap-ldpi/icon.png" />
+      <icon background="#040404" density="mdpi" foreground="res/icons/android/mipmap-mdpi/icon.png" />
+      <icon background="#040404" density="hdpi" foreground="res/icons/android/mipmap-hdpi/icon.png" />
+      <icon background="#040404" density="xhdpi" foreground="res/icons/android/mipmap-xhdpi/icon.png" />
+      <icon background="#040404" density="xxhdpi" foreground="res/icons/android/mipmap-xxdpi/icon.png" />
+      <icon background="#040404" density="xxxhdpi" foreground="res/icons/android/mipmap-xxxdpi/icon.png" />
     </platform>
 
 
