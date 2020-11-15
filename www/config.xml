@@ -6,7 +6,7 @@
         id        = "com.phonegap.dmepromotions"
         version   = "1.0">
 
-    <name>DME Promotions</name>
+    <name>DME</name>
     <description>Concerts and Events</description>
     <author href="http://crystalmountainmedia.net" email="contact@crystalmountainmedia.net">Crystal Mountain Media</author>
 
