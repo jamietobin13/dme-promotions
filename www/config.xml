@@ -49,14 +49,15 @@
     <plugin name="cordova-plugin-whitelist" />
 
 
+    <resource-file src="res/icons/android/values/ic_launcher_background.xml" target="/app/src/main/res/android/values/ic_launcher_background.xml" />
     <platform name="android">
-      <resource-file src="res/android/values/ic_launcher_background.xml" target="/app/src/main/res/android/values/ic_launcher_background.xml" />
-      <icon background="@color/background" density="ldpi" foreground="res/icon/android/mipmap-ldpi/ic_launcher.png" />
-      <icon background="@color/background" density="mdpi" foreground="res/icon/android/mipmap-mdpi/ic_launcher_foreground.png" />
-      <icon background="@color/background" density="hdpi" foreground="res/icon/android/mipmap-hdpi/ic_launcher_foreground.png" />
-      <icon background="@color/background" density="xhdpi" foreground="res/icon/android/mipmap-xhdpi/ic_launcher_foreground.png" />
-      <icon background="@color/background" density="xxhdpi" foreground="res/icon/android/mipmap-xxdpi/ic_launcher_foreground.png" />
-      <icon background="@color/background" density="xxxhdpi" foreground="res/icon/android/mipmap-xxxdpi/ic_launcher_foreground.png" />
+      
+      <icon background="@color/background" density="ldpi" foreground="res/icons/android/mipmap-ldpi/icon.png" />
+      <icon background="@color/background" density="mdpi" foreground="res/icons/android/mipmap-mdpi/icon.png" />
+      <icon background="@color/background" density="hdpi" foreground="res/icons/android/mipmap-hdpi/icon.png" />
+      <icon background="@color/background" density="xhdpi" foreground="res/icons/android/mipmap-xhdpi/icon.png" />
+      <icon background="@color/background" density="xxhdpi" foreground="res/icons/android/mipmap-xxdpi/icon.png" />
+      <icon background="@color/background" density="xxxhdpi" foreground="res/icons/android/mipmap-xxxdpi/icon.png" />
     </platform>
 
 
@@ -79,10 +80,10 @@
     <icon src="res/icons/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
     <icon src="res/icons/ios/icon-76-2x.png" gap:platform="ios" width="152" height="152" />
     <icon src="res/icons/ios/icon-60-3x.png" gap:platform="ios" width="180" height="180" />
-    <icon src="res/icons/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <!-- <icon src="res/icons/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icons/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icons/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="res/icons/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="res/icons/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" /> -->
 
 
     <!-- Define app splash screen for each platform. -->
