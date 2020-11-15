@@ -39,8 +39,6 @@
     <preference name="SplashMaintainAspectRatio" value="true" />
 
     <!-- Plugins -->
-
-    <!-- Core plugins -->
     <plugin name="cordova-plugin-console" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-dialogs" />
@@ -51,30 +49,7 @@
     <plugin name="cordova-plugin-whitelist" />
 
 
-    
-    <!-- <plugin name="pushwoosh-intel-xdk-plugin" /> -->
-    
-    <!-- <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/> not working -->
-    <!--<plugin name="cordova-plugin-device-motion" /> -->
-    <!--<plugin name="cordova-plugin-device-orientation" /> -->
-    <!--<plugin name="cordova-plugin-file" /> -->
-    <!--<plugin name="cordova-plugin-globalization" /> -->
-    <!--<plugin name="cordova-plugin-media" /> -->
-    <!--<plugin name="cordova-plugin-battery-status" />-->
-    <!--<plugin name="cordova-plugin-camera" />-->
-    <!--<plugin name="cordova-plugin-media-capture" />-->
-    <!--<plugin name="cordova-plugin-contacts" />-->
-    <!--<plugin name="cordova-plugin-file-transfer" />-->
-    <!--<plugin name="cordova-plugin-geolocation" />-->
-    <!--<plugin name="cordova-plugin-vibration" />-->
-
-
-    <!-- Third party plugins -->
-    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-    <!-- <plugin name="com.phonegap.plugins.barcodescanner" /> -->
-
     <!-- Define app icon for each platform. -->
-
     <icon src="icon.png" />
     <icon src="res/icons/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
     <icon src="res/icons/ios/icon-40.png" gap:platform="ios" width="40" height="40" />
@@ -97,7 +72,6 @@
     <icon src="res/icons/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icons/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="res/icons/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    <!-- <icon src="res/icons/webos/icon-64.png" gap:platform="webos" /> -->
 
 
     <!-- Define app splash screen for each platform. -->
@@ -119,24 +93,11 @@
 
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>107</string>
+        <string>100</string>
     </gap:config-file>
 
-    <!--
-        Define access to external domains.
-        <access />            - a blank access tag denies access to all external resources.
-        <access origin="*" /> - a wildcard access tag allows access to all external resource.
 
-        Otherwise, you can specify specific domains:
-        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
-        <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
-        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
-    -->
-
-
-    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
-    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-    
+    <!-- external access -->
     <access origin="*"/>
     <allow-intent href="*" />
     <allow-navigation href="*" />

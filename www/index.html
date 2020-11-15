@@ -16,14 +16,15 @@
             var app = {
                 initialize: function() {
 
-                    this.bindEvents();
+                    app.bindEvents();
 
                 },   
                 bindEvents: function() {
 
-                    document.addEventListener('offline', this.onOffline, false);
-                    document.addEventListener('online', this.onOnline, false);
-                    document.addEventListener('deviceready', this.onDeviceReady, false);
+                    alert('binding');
+                    document.addEventListener('offline', app.onOffline, false);
+                    document.addEventListener('online', app.onOnline, false);
+                    document.addEventListener('deviceready', app.onDeviceReady, false);
 
                 },
                 onDeviceReady: function() {
