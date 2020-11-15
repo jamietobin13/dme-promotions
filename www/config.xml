@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.dmepromotions"
-        version   = "1.0">
+<widget 
+    xmlns = "http://www.w3.org/ns/widgets" 
+    xmlns:gap = "http://phonegap.com/ns/1.0"  
+    id = "com.phonegap.dmepromotions" 
+    version = "1.0">
 
+     <!-- Base -->
     <name>DME</name>
     <description>Concerts and Events</description>
     <author href="http://crystalmountainmedia.net" email="contact@crystalmountainmedia.net">Crystal Mountain Media</author>
 
-    <!--
-        If you do not want any permissions to be added to your app, add the
-        following tag to your config.xml; you will still have the INTERNET
-        permission on your app, which PhoneGap requires.
-    -->
-    <preference name="permissions"                value="none"/>
 
-    <!-- Customize your app and platform with the preference element. -->
+     <!-- Preferences -->
+    <preference name="permissions"                value="none"/>            <!-- internet only, required -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -30,35 +27,30 @@
     <preference name="show-splash-screen-spinner" value="false" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	
-    <!-- Define a specific version of PhoneGap to build into your app. -->
-    <!-- <preference name="phonegap-version" value="cli-6.5.0" /> -->
+
+    <!-- PhoneGap version. -->
     <preference name="android-minSdkVersion" value="28" />
     <preference name="android-targetSdkVersion" value="29" />
     <preference name="SplashMaintainAspectRatio" value="true" />
+
+
+    <!-- IOS build version -->
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>100</string>
+    </gap:config-file>
+
 
     <!-- Plugins -->
     <plugin name="cordova-plugin-console" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-inappbrowser" />
-    
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-whitelist" />
 
-
-    
-    <!-- <platform name="android">
-      <resource-file src="res/icons/android/values/ic_launcher_background.xml" target="/app/src/main/res/icons/android/values/ic_launcher_background.xml" />
-      <icon background="#040404" density="ldpi" foreground="res/icons/android/mipmap-ldpi/icon.png" />
-      <icon background="#040404" density="mdpi" foreground="res/icons/android/mipmap-mdpi/icon.png" />
-      <icon background="#040404" density="hdpi" foreground="res/icons/android/mipmap-hdpi/icon.png" />
-      <icon background="#040404" density="xhdpi" foreground="res/icons/android/mipmap-xhdpi/icon.png" />
-      <icon background="#040404" density="xxhdpi" foreground="res/icons/android/mipmap-xxdpi/icon.png" />
-      <icon background="#040404" density="xxxhdpi" foreground="res/icons/android/mipmap-xxxdpi/icon.png" />
-    </platform> -->
 
 
     <!-- Define app icon for each platform. -->
@@ -103,10 +95,6 @@
     <gap:splash src="res/screens/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="res/screens/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
 
-
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>100</string>
-    </gap:config-file>
 
 
     <!-- external access -->
