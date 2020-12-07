@@ -34,6 +34,7 @@
     <preference name="android-minSdkVersion" value="28" />
     <preference name="android-targetSdkVersion" value="29" />
     <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
 
 
     <!-- IOS build version -->
