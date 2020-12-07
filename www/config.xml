@@ -81,6 +81,7 @@
 
 
     <!-- Define app splash screen for each platform. -->
+    <splash src="splash.png" />
     <gap:splash src="res/screens/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screens/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screens/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi" />
